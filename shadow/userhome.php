@@ -254,8 +254,7 @@ echo $date;
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
-			<h3>Hot Offers</h3>
-			<div class="agile_top_brands_grids">'
+			<h3>Hot Offers</h3>'
 	$row=$collection->find();
 	foreach($row as $res)
 	{
@@ -305,7 +304,6 @@ echo $date;
 		';
 	}
 	?>
-	</div>
 </div>
 	</div>	
 <!-- //top-brands -->
