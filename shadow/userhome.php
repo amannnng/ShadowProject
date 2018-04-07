@@ -250,7 +250,12 @@ echo $date;
 	
 	
 	echo'</table></div>';
+	
+	$row=$collection->find();
+	foreach($row as $res)
+	{
 
+		if($res['offerexp']>$date)
 echo '
 <!-- top-brands -->
 	<div class="top-brands">
@@ -299,7 +304,8 @@ echo '
 			</div>
 		</div>
 	</div>';
-?> 
+	}
+	?> 
 <!-- //top-brands -->
 <!-- fresh-vegetables -->
 	<div class="fresh-vegetables">
