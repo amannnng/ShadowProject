@@ -255,7 +255,7 @@ echo $date;
 	<div class="top-brands">
 		<div class="container">
 			<h3>Hot Offers</h3>'
-	$row=$collection->find();
+	
 	foreach($row as $res)
 	{
 
