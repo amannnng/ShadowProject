@@ -250,16 +250,16 @@ echo $date;
 	
 	
 	echo'</table></div>';
-	
+	echo '
+<!-- top-brands -->
+	<div class="top-brands">
+		<div class="container">
+			<h3>Hot Offers</h3>'
 	$row=$collection->find();
 	foreach($row as $res)
 	{
 
 		echo '
-<!-- top-brands -->
-	<div class="top-brands">
-		<div class="container">
-			<h3>Hot Offers</h3>
 			<div class="agile_top_brands_grids">
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
@@ -301,10 +301,11 @@ echo $date;
 				
 				<div class="clearfix"> </div>
 			</div>
-		</div>
-	</div>';
+		';
 	}
-	?> 
+	?>
+</div>
+	</div>	
 <!-- //top-brands -->
 <!-- fresh-vegetables -->
 	<div class="fresh-vegetables">
