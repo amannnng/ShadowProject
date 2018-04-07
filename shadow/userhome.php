@@ -255,8 +255,7 @@ echo $date;
 	foreach($row as $res)
 	{
 
-		if($res['offerexp']>$date)
-echo '
+		echo '
 <!-- top-brands -->
 	<div class="top-brands">
 		<div class="container">
